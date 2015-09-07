@@ -1,0 +1,8 @@
+Application Instances > List
+# https://rpm.newrelic.com/api/explore/application_instances/list?application_id=8351853
+
+const API_KEY: secret.json
+var application_id: 8351853 # forms-io
+
+curl -X GET 'https://api.newrelic.com/v2/applications/$application_id/instances.json' \
+     -H 'X-Api-Key: $API_KEY' -i

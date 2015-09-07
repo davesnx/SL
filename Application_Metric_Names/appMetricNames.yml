@@ -1,0 +1,9 @@
+Applications > Metric Names
+# https://rpm.newrelic.com/api/explore/applications/metric_names?application_id=8351853&name=Apdex/Action/render
+
+const API_KEY: secret.json
+var appName: "Apdex/Action/render"
+
+curl -X GET 'https://api.newrelic.com/v2/applications/8351853/metrics.json' \
+     -H 'X-Api-Key: $API_KEY' -i \
+     -d 'name= $appName' 

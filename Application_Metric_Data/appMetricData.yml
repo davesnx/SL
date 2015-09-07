@@ -1,0 +1,11 @@
+Applications > Metric Data
+# https://rpm.newrelic.com/api/explore/applications/metric_data?names[]=Apdex/Action/render&values[]=%22s%22,&values[]=%22t%22,&values[]=%22f%22,&values[]=%22count%22,&values[]=%22score%22,&values[]=%22value%22,&values[]=%22threshold%22,&values[]=%22threshold_min%22&application_id=8351853&to=2015-09-07T21:16:0000:00&from=2015-04-07T20:46:0000:00
+
+const API_KEY: secret.json
+var application_id: 8351853
+var appName: Apdex/Action/render
+var arrayValues: 'values[]="s",&values[]="t",&values[]="f",&values[]="count",&values[]="score",&values[]="value",&values[]="threshold",&values[]="threshold_min"&from=2015-04-07T20:46:0000:00&to=2015-09-07T21:16:0000:00'
+
+curl -X GET 'https://api.newrelic.com/v2/applications/$application_id/metrics/data.json' \
+     -H 'X-Api-Key: $API_KEY' -i \
+     -d 'names[]=$appName&$arrayValues'
