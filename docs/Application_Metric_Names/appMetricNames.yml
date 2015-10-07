@@ -1,0 +1,9 @@
+Applications > Metric Names
+# https://rpm.newrelic.com/api/explore/applications/metric_names
+
+const api_key: (secret.json).API_KEY;
+const application_id: (secret.json).forms-com.id
+const application_host_id: (secret.json).forms-com.application_host_ids
+
+curl -X GET 'https://api.newrelic.com/v2/applications/${application_id}/hosts/${application_host_id}/metrics.json' \
+     -H 'X-Api-Key: ${api_key}' -i
