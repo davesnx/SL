@@ -3,10 +3,7 @@ Applications > Metric Data
 
 const api_key: (secret.json).API_KEY;
 const application_id: (secret.json).forms-com.id
-
-var appName: Apdex/Action/render
-var arrayValues: 'values[]="s",&values[]="t",&values[]="f",&values[]="count",&values[]="score",&values[]="value",&values[]="threshold",&values[]="threshold_min"&from=2015-04-07T20:46:0000:00&to=2015-09-07T21:16:0000:00'
+const application_host_id: (secret.json).forms-com.application_host_ids
 
 curl -X GET 'https://api.newrelic.com/v2/applications/${application_id}/metrics/data.json' \
      -H 'X-Api-Key: ${api_key}' -i \
-     -d 'names[]=$appName&$arrayValues'
