@@ -1,8 +1,8 @@
 {
-  "name": "statistics_of_loading",
+  "name": "sanxo",
   "version": "0.0.1",
-  "description": "Statistics of Loading forms-com",
+  "description": "",
   "main": "index.js",
   "author": "@davesnx",
-  "license": "ISC"
+  "license": "MIT"
 }

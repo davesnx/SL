@@ -1,8 +1,0 @@
-Application Instances > List
-# https://rpm.newrelic.com/api/explore/application_instances/list
-
-const api_key: (secret.json).API_KEY;
-const application_id: (secret.json).forms-com.id
-
-curl -X GET 'https://api.newrelic.com/v2/applications/${application_id}/instances.json' \
-     -H 'X-Api-Key: $api_key' -i

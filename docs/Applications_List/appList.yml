@@ -1,7 +1,0 @@
-Applications > List
-# https://rpm.newrelic.com/api/explore/applications/list
-
-const api_key: (secret.json).API_KEY;
-
-curl -X GET 'https://api.newrelic.com/v2/applications.json' \
-     -H 'X-Api-Key: ${api_key}' -i
